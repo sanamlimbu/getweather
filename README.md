@@ -14,6 +14,14 @@ Simple application that uses gRPC and protocol buffer. Server fetches weather in
     $ go install google.golang.org/grpc/cmd/protoc-gen-go-grpc@v1.2
     ```
 2.  Update your PATH so that the protoc compiler can find the plugins:
+
     ```
     $ export PATH="$PATH:$(go env GOPATH)/bin"
+    ```
+
+    Note: Mac user don't follow step 2 and use following command:
+
+    ```
+    $ brew install protoc-gen-go
+    $ brew install protoc-gen-go-grpc
     ```
