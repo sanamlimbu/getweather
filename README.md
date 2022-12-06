@@ -1,4 +1,4 @@
-# gRPC tutorial
+# gRPC and Protocol buffer
 
 Simple application that uses gRPC and protocol buffer. Server fetches weather information of given location from [Open-Meteo](https://open-meteo.com/en) and returns to the client.
 
