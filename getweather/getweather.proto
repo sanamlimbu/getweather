@@ -1,0 +1,29 @@
+syntax = "proto3";
+
+option go_package = "github.com/sanamlimbu/getweather/getweather";
+
+import "google/protobuf/timestamp.proto";
+
+package getweather;
+
+// Interface exported by the server 
+service Weather {
+    // A simple RPC that obtains weather info at given location
+    // Returned at once not streamed
+    rpc CurrentWeatherInfo(Location) returns (WeatherInfo) {}
+}
+
+// Location represents latitude and longitude pair
+message Location {
+    float latitude = 1;
+    float longitude = 2;
+}
+
+// WeatherInfo is recieved in response to a GetWeatherInfo rpc
+message WeatherInfo {
+    Location location = 1;
+    float temperature = 2;
+    float windspeed = 3;
+    float winddirection = 4;
+    google.protobuf.Timestamp time = 5;
+}
