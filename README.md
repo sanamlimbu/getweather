@@ -21,7 +21,7 @@ Simple application that uses gRPC and protocol buffer. Server fetches weather in
 
 Note: For Mac OS use following commands instead of steps 1 and 2:
 
-    ```
-    $ brew install protoc-gen-go
-    $ brew install protoc-gen-go-grpc
-    ```
+```
+$ brew install protoc-gen-go
+$ brew install protoc-gen-go-grpc
+```
