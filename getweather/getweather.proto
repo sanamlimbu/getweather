@@ -2,8 +2,6 @@ syntax = "proto3";
 
 option go_package = "github.com/sanamlimbu/getweather/getweather";
 
-import "google/protobuf/timestamp.proto";
-
 package getweather;
 
 // Interface exported by the server 
@@ -25,5 +23,5 @@ message WeatherInfo {
     float temperature = 2;
     float windspeed = 3;
     float winddirection = 4;
-    google.protobuf.Timestamp time = 5;
+    string time = 5;
 }
