@@ -19,7 +19,7 @@ Simple application that uses gRPC and protocol buffer. Server fetches weather in
     $ export PATH="$PATH:$(go env GOPATH)/bin"
     ```
 
-Note: For Mac OS use following commands instead of steps 1 and 2:
+Note: For Mac OS, use following commands instead of steps 1 and 2:
 
 ```
 $ brew install protoc-gen-go
@@ -28,7 +28,7 @@ $ brew install protoc-gen-go-grpc
 
 ### Start gRPC server
 
-Start server listenin on port 9001
+Start server listening on port 9001
 
 ```
 $ go run /server/server.go
