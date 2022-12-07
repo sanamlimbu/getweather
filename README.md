@@ -37,7 +37,7 @@ $ go run /server/server.go
 ### Connect gRPC client
 
 ```
-go run /client/client.go
+$ go run /client/client.go
 ```
 
 ### Generate gRPC code
